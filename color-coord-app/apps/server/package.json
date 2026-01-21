@@ -1,0 +1,31 @@
+{
+  "name": "color-coord-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc && mkdir -p dist/db && cp src/db/*.sql dist/db/",
+    "db:init": "tsx src/db/init.ts"
+  },
+  "dependencies": {
+    "@types/multer": "^2.0.0",
+    "@types/uuid": "^11.0.0",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^2.0.2",
+    "node-vibrant": "^4.0.3",
+    "sharp": "^0.34.5",
+    "uuid": "^13.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
