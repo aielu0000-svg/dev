@@ -9,7 +9,7 @@ import {
   Modal,
   Alert,
   ActivityIndicator,
-} from 'react';
+} from 'react-native';
 import { useRouter } from 'expo-router';
 
 interface Collection {

@@ -85,6 +85,11 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
 
+// Root route for browser access
+app.get('/', (_req, res) => {
+  res.type('text').send('Color Coord API is running. See /health for status.');
+});
+
 // Error handler
 app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(err.stack);
